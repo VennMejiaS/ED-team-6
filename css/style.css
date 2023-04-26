@@ -1,311 +1,255 @@
-body{
-  background-color: none;
+body {
+  background: url(../img/fondo.png);
+  background-size: cover;
+  margin-top: 50px;
+  padding: 0px;
+  height: 887px;
+  width: 1440px;
+  font-style: none;
+  font-family: "Montserrat", sans-serif;
 }
-.avatar{
-  position: absolute;
-  width: 92px;
-  height: 92px;
-  left: 33px;
-  top: 32px;
 
+.avatar {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  padding-top: 5px;
 }
 
-#btn-login {
-  border: none;
-  background-color: inherit;
+.title h1 {
+  /* Iniciar Sesión */
   position: absolute;
-  width: 117px;
-  height: 52px;
+  width: 303px;
+  height: 31px;
+  left: 597px;
+  top: 53px;
+  font-family: 'Montserrat' sans-serif;
+  font-size: bold;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  color: #0083BA;
+}
+
+.principal {
+  position: absolute;
+  width: 460px;
+  height: 492px;
+  left: 480px;
+  top: 147px;
+  background: #FCFEFF;
+  border-radius: 84px;
+}
+
+.principal input[type="text"] {
+  box-sizing: border-box;
+  position: absolute;
+  width: 400px;
+  height: 54px;
+  left: 35px;
+  top: 150px;
+  background: #D9D9D9;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  font-size: 30px;
+  color: #A9A5A5;
+  padding-left: 70px;
+}
+
+.docente {
+  position: absolute;
+  width: 200px;
+  height: 37px;
+  left: 120px;
+  top: 250px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #0083BA;
+}
+
+.estudiante {
+  position: absolute;
+  width: 210px;
+  height: 37px;
   left: 130px;
-  top: 58px;
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 33px;
-  color: #57BA8B;
-  cursor: pointer; 
-  display: inline-block;
+  top: 340px;
+  font-weight: 500px;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #0083BA;
 }
-  /*On mouse-over */
-  #btn-login:hover {
-    color: RoyalBlue;
-  }
 
-#btn-profile {
+/* Create a custom radio button */
+#docente {
+  position: absolute;
+  top: 252px;
+  left: 95px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%; 
+  border-color:  #57BA8B; 
+}
+
+/* On mouse-over, add a grey background color */
+#docente:hover {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+#docente:checked {
+  background-color: #2196F3;
+}
+
+/* Create a custom radio button */
+#estudiante {
+  position: absolute;
+  top: 343px;
+  left: 95px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;  
+}
+
+/* On mouse-over, add a grey background color */
+#estudiante:hover {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+#estudiante:checked {
+  background-color: #2196F3;
+}
+
+.button[type="submit"] {
   border: none;
-  background-color: inherit;
+  outline: none;
+  height: 25px;
+  background: inherit;
+  color: #0083BA;
   position: absolute;
-  width: 299px;
-  height: 52px;
-  left: 280px;
-  top: 58px;
-  font-family: 'Montserrat' sans-serif;
+  width: 303px;
+  height: 45px;
+  left: 100px;
+  top: 520px;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 33px;
-  color: #57BA8B;
-  cursor: pointer; 
-  display: inline-block;
-  }
-  /*On mouse-over */
-  #btn-profile:hover {
-  color: RoyalBlue;
-    }
-
-#btn-evaluation {
-  border: none;
-  background-color: inherit;
-  position: absolute;
-  width: 299px;
-  height: 52px;
-  left: 600px;
-  top: 58px;
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 39px;
-  color: #57BA8B;
-  cursor: pointer; 
-  display: inline-block;    
-    }    
-  /*On mouse-over */
-  #btn-evaluation:hover {
-  color: RoyalBlue;
-}     
-
-#btn-analysis {
-  border: none;
-  background-color: inherit;
-  position: absolute;
-  width: 299px;
-  height: 52px;
-  left: 900px;
-  top: 58px;
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 39px;
-  color: #57BA8B;
-  cursor: pointer; 
-  display: inline-block;
-}
-  /*On mouse-over */
-  #btn-analysis:hover {
-    color: RoyalBlue;
-  }
-
-#btn-contact {
-  border: none;
-  background-color: inherit;
-  position: absolute;
-  width: 299px;
-  height: 52px;
-  left: 1200px;
-  top: 58px;
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 39px;
-  color: #57BA8B;
-  cursor: pointer; 
-  display: inline-block;
-}
-  /*On mouse-over */
-#btn-contact:hover {
-  color: RoyalBlue;
-}        
-
-a {
-  text-decoration: none;
-  padding: 8px 16px;
-  position: relative;
-  left: 1260px;
-  top: 200px;
-  
+  font-size: 32px;
+  line-height: 5px;
 }
 
-.previous {
-  background-color: royalblue;
-  color: white;
+.button:hover[type="submit"] {
+  background-color: transparent;
+  color: #57BA8B ;
+}
+h2 {
+position: absolute;
+width: 299px;
+height: 52px;
+left: 241px;
+top: 49px;
+font-weight: 900;
+font-size: 30px;
+line-height: 37px;
+color: #0086BD;
 }
 
-.next {
-  background-color: royalblue;
-  color: white;
+#btn-exit{
+position: absolute;
+background-color: transparent;
+border-color: transparent;
+width: 80px;
+height: 45px;
+left: 1240px;
+top: 52px;
+font-weight: 900;
+font-size: 27px;
+line-height: 33px;
+color: #0086BD;
 }
-
-.round {
-  border-radius: 50%;
-}
-      
-#btn-share{
-  text-decoration: none;
-  position: absolute;
-  width: 57px;
-  height: 57px;
-  left: 200px;
-  top: 750px;
-}
-
-#btn-talk{
-  text-decoration: none;
-  position: absolute;
-  width: 57px;
-  height: 57px;
-  left: 280px;
-  top: 750px;
-}
-
-#btn-write{
-  text-decoration: none;
-  position: absolute;
-  width: 57px;
-  height: 57px;
-  left: 360px;
-  top: 750px;
+#btn-exit:hover {
+  background-color: transparent;
+  color: #57BA8B ;
 }
 
 #proyect-name{
-box-sizing: border-box;
-position: absolute;
-width: 673px;
-height: 50px;
-left: 63px;
-top: 200px;
-background: #D9D9D9;
-border: 1px solid rgba(0, 0, 0, 0.2);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 24px;
-
-position: absolute;
-padding-left: 15px;
-padding-top: 2px;
-padding-bottom: 2px;
-font-family: 'Montserrat' sans-serif;
-font-weight: 500px;
-font-size: 23px;
-color: #A9A5A5;
-}
-
-#proyect-leader{
-position: absolute;
-width: 286px;
-height: 44px;
-left: 784px;
-top: 300px;
-background: #D9D9D9;
-border: 1px solid rgba(0, 0, 0, 0.2);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 22px;
-
-position: absolute;
-padding-left: 15px;
-padding-top: 2px;
-padding-bottom: 2px;
-font-family: 'Montserrat' sans-serif;
-font-weight: 500px;
-font-size: 23px;
-color: #A9A5A5;
-}
-
-#e-mail{
+  box-sizing: border-box;
   position: absolute;
-  width: 286px;
-  height: 44px;
-  left: 1100px;
-  top: 300px;
-  background: #D9D9D9;
+  width: 673px;
+  height: 57px;
+  left: 373px;
+  top: 268px;
+  background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 22px;
-  
-  position: absolute;
-  padding-left: 15px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 500px;
-  font-size: 23px;
-  color: #A9A5A5;  
+  border-radius: 24px;  
+  font-size: 27px;
+  padding-left: 200px;
+  color: #A9A5A5
 }
-
-#proyect-specification{
+#videoproyect{
+  box-sizing: border-box;
   position: absolute;
-  width: 600px;
-  height: 330px;
-  left: 784px;
-  top: 380px;
-  background: #D9D9D9;
+  width: 673px;
+  height: 57px;
+  left: 373px;
+  top: 395px;
+  background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 22px;
-  
+  border-radius: 24px;  
+  font-size: 27px;
+  padding-left: 200px;
+  color: #A9A5A5
+}
+h3{
   position: absolute;
-  padding-left: 15px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 500px;
-  font-size: 23px;
-  color: #A9A5A5;  
+  width: 489px;
+  height: 50px;
+  left: 475px;
+  top: 545px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 33px;
+  text-align: center;
+  color: #56BC8B; 
+}
+h4{
+  position: absolute;
+  width: 345px;
+  height: 37px;
+  left: 407px;
+  top: 600px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0086BD;
 }
 
-.video{
+.plata{
 position: absolute;
-width: 673px;
-height: 411px;
-left: 63px;
-top: 300px;
-border-radius: 29px;
+width: 147px;
+height: 217px;
+left: 406px;
+top: 669px;
 }
 
-#btn-save{
-  border: none;
-  background-color: inherit;
-  position: absolute;
-  width: 299px;
-  height: 52px;
-  left: 1200px;
-  top: 730px;
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 39px;
-  color: royalblue;
-  cursor: pointer; 
-  display: inline-block;
+.bronce{
+position: absolute;
+width: 145px;
+height: 213px;
+left: 626px;
+top: 669px;
 }
 
-#config-evaluation{
-  border: none;
-  background-color: inherit;
-  position: absolute;
-  width: 350px;
-  height: 52px;
-  left: 700px;
-  top: 800px;
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 39px;
-  color: royalblue;
-  cursor: pointer; 
-  display: inline-block;  
-}
-
-#result{
-  border: none;
-  background-color: inherit;
-  position: absolute;
-  width: 200px;
-  height: 52px;
-  left: 1210px;
-  top: 800px;
-  font-family: 'Montserrat' sans-serif;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 39px;
-  color: royalblue;
-  cursor: pointer; 
-  display: inline-block;  
+.oro{
+position: absolute;
+width: 146px;
+height: 217px;
+left: 842px;
+top: 669px;
 }
