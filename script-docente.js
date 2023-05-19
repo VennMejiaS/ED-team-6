@@ -59,12 +59,6 @@ function actualizarResultados(
       totalDeOros++;
     }
 
-    // actualizamos el html
-    // como te comenté, los elementos dom son representaciones del html en Javascript
-    // entonces como son elementos html estos te permiten modificar el html en jacvascript
-    // para actualizar un elemento en javascriot debes actualizar el valor de la propiedad html
-    // esta es innerHTML
-
     resultadoPlataDom.innerHTML = totalDePlatas;
     resultadoBronceDom.innerHTML = totalDeBronces;
     resultadoOroDom.innerHTML = totalDeOros;
