@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Docente</title>
+    
 </head>
 <body>
   <main>
-    <div class=>
+    <div>
       <img class="avatar" src="img/logo.jpg" alt="logo edvisto">
       <h2>Docente</h2>
       <h5>Evaluación</h5>
@@ -19,6 +20,7 @@
     </div>
   
     </div>
+
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Alumnos participantes</button>
         <div id="myDropdown" class="dropdown-content">
@@ -31,22 +33,150 @@
      <p id="Pensamiento"> Pensamiento Crítico</p> 
      <p id="pc1"> Muestra un conocimiento <br> sólido del tema?</p>
      <p id="pc2"> Utilizó algún método de <br> investigación?</p>
-     <p id="pc3"> Resultado</p>
+     <p id="pc3"> Resultado 
+        <span id="pcr1">0</span>
+        <span id="pcr2">0</span>
+        <span id="pcr3">0</span>
+     </p>
     </div>
+
     <div class="btn-pc1" role="group" aria-label="Basic radio toggle button group">
-      <input type="checkbox" class="btn-plata" name="btnradio" id="plata1" autocomplete="off" checked>
-      <input type="checkbox" class="btn-bronce" name="btnradio" id="bronce1" autocomplete="off" checked>
-      <input type="checkbox" class="btn-oro" name="btnradio" id="oro1" autocomplete="off" checked>
+      <fieldset class="pcc-button">
+        <input type="radio" class="btn-plata"  name="pensamiento_critico_conocimiento" id="plata1" autocomplete="off">
+        <input type="radio" class="btn-bronce" name="pensamiento_critico_conocimiento" id="bronce1" autocomplete="off" >
+        <input type="radio" class="btn-oro"    name="pensamiento_critico_conocimiento" id="oro1" autocomplete="off" >
+      </fieldset>
+      
     </div>
     <div class="btn-pc2" role="group" aria-label="Basic radio toggle button group">
-      <input type="checkbox" class="btn-plata" name="btnradio" id="plata2" autocomplete="off" checked>
-      <input type="checkbox" class="btn-bronce" name="btnradio" id="bronce2" autocomplete="off" checked>
-      <input type="checkbox" class="btn-oro" name="btnradio" id="oro2" autocomplete="off" checked>
+      <fieldset class="pcm-button">
+        <input type="radio" class="btn-plata"  name="pensamiento_critico_metodo" id="plata2" autocomplete="off" >
+        <input type="radio" class="btn-bronce" name="pensamiento_critico_metodo" id="bronce2" autocomplete="off" >
+        <input type="radio" class="btn-oro"    name="pensamiento_critico_metodo" id="oro2" autocomplete="off" >
+      </fieldset>
+      
     </div>
+
     <div class="btn-pc3" role="group" aria-label="Basic radio toggle button group">
-      <input type="checkbox" class="btn-plata" name="btnradio" id="plata3" autocomplete="off" checked>
-      <input type="checkbox" class="btn-bronce" name="btnradio" id="bronce3" autocomplete="off" checked>
-      <input type="checkbox" class="btn-oro" name="btnradio" id="oro3" autocomplete="off" checked>
+      <fieldset class="pcr-button">
+        <input type="radio" class="btn-plata-r" name="btnradio" id="plata3" autocomplete="off" >
+        <input type="radio" class="btn-bronce-r" name="btnradio" id="bronce3" autocomplete="off" >
+        <input type="radio" class="btn-oro-r" name="btnradio" id="oro3" autocomplete="off" >
+      </fieldset>
     </div>
+
+    <div class="Habilidad-Comunicación">
+      <p id="Comunicacion"> Comunicación</p> 
+      <p id="hc4"> Se comunicó activamente <br> con sus compañeros?</p>
+      <p id="hc5"> Expresa claramente sus<br>ideas?</p>
+      <p id="hc6"> Resultado 
+         <span id="hcr4">0</span>
+         <span id="hcr5">0</span>
+         <span id="hcr6">0</span>
+      </p>
+     </div>
+ 
+     <div class="btn-hc4" role="group" aria-label="Basic radio toggle button group">
+       <fieldset class="hca-button">
+         <input type="radio" class="btn-plata"  name="comunicacion_activa" id="plata4" autocomplete="off">
+         <input type="radio" class="btn-bronce" name="comunicacion_activa" id="bronce4" autocomplete="off" >
+         <input type="radio" class="btn-oro"    name="comunicacion_activa" id="oro4" autocomplete="off" >
+       </fieldset>
+       
+     </div>
+     <div class="btn-hc5" role="group" aria-label="Basic radio toggle button group">
+       <fieldset class="hce-button">
+         <input type="radio" class="btn-plata"  name="comunicacion_expresion" id="plata5" autocomplete="off" >
+         <input type="radio" class="btn-bronce" name="comunicacion_expresion" id="bronce5" autocomplete="off" >
+         <input type="radio" class="btn-oro"    name="comunicacion_expresion" id="oro5" autocomplete="off" >
+       </fieldset>
+       
+     </div>
+ 
+     <div class="btn-hc6" role="group" aria-label="Basic radio toggle button group">
+       <fieldset class="hcr-button">
+         <input type="radio" class="btn-plata-r" name="btnradio" id="plata6" autocomplete="off" >
+         <input type="radio" class="btn-bronce-r" name="btnradio" id="bronce6" autocomplete="off" >
+         <input type="radio" class="btn-oro-r" name="btnradio" id="oro6" autocomplete="off" >
+       </fieldset>
+     </div>
+
+     <div class="Trabajo-colaborativo">
+      <p id="Trabajo"> Trabajo Colaborativo</p> 
+      <p id="tc7"> Responde a las inquietudes <br>de sus compañeros?</p>
+      <p id="tc8"> Cumplió con sus compro- <br> misos dentro del proyecto?</p>
+      <p id="tc9"> Resultado 
+         <span id="tcr7">0</span>
+         <span id="tcr8">0</span>
+         <span id="tcr9">0</span>
+      </p>
+     </div>
+ 
+     <div class="btn-tc7" role="group" aria-label="Basic radio toggle button group">
+       <fieldset class="tci-button">
+         <input type="radio" class="btn-plata"  name="trabajo_colaborativo_inquietudes" id="plata7" autocomplete="off">
+         <input type="radio" class="btn-bronce" name="trabajo_colaborativo_inquietudes" id="bronce7" autocomplete="off" >
+         <input type="radio" class="btn-oro"    name="trabajo_colaborativo_inquietudes" id="oro7" autocomplete="off" >
+       </fieldset>
+       
+     </div>
+     <div class="btn-tc8" role="group" aria-label="Basic radio toggle button group">
+       <fieldset class="tcc-button">
+         <input type="radio" class="btn-plata"  name="trabajo_colaborativo_compromisos" id="plata8" autocomplete="off" >
+         <input type="radio" class="btn-bronce" name="trabajo_colaborativo_compromisos" id="bronce8" autocomplete="off" >
+         <input type="radio" class="btn-oro"    name="trabajo_colaborativo_compromisos" id="oro8" autocomplete="off" >
+       </fieldset>
+       
+     </div>
+ 
+     <div class="btn-tc9" role="group" aria-label="Basic radio toggle button group">
+       <fieldset class="tcr-button">
+         <input type="radio" class="btn-plata-r" name="btnradio" id="plata9" autocomplete="off" >
+         <input type="radio" class="btn-bronce-r" name="btnradio" id="bronce9" autocomplete="off" >
+         <input type="radio" class="btn-oro-r" name="btnradio" id="oro9" autocomplete="off" >
+       </fieldset>
+     </div>
+
+     <div class="Habilidad-creatividad">
+      <p id="Creatividad">Creatividad</p> 
+      <p id="cr10">Se informó sobre<br>elementos visuales?</p>
+      <p id="cr11">Muestra una perspectiva<br>única?</p>
+      <p id="cr12"> Resultado 
+         <span id="crr10">0</span>
+         <span id="crr11">0</span>
+         <span id="crr12">0</span>
+      </p>
+     </div>
+ 
+     <div class="btn-cr10" role="group" aria-label="Basic radio toggle button group">
+       <fieldset class="crv-button">
+         <input type="radio" class="btn-plata"  name="creatividad_visuales" id="plata10" autocomplete="off">
+         <input type="radio" class="btn-bronce" name="creatividad_visuales" id="bronce10" autocomplete="off" >
+         <input type="radio" class="btn-oro"    name="creatividad_visuales" id="oro10" autocomplete="off" >
+       </fieldset>
+       
+     </div>
+     <div class="btn-cr11" role="group" aria-label="Basic radio toggle button group">
+       <fieldset class="crp-button">
+         <input type="radio" class="btn-plata"  name="creatividad_perspectiva" id="plata11" autocomplete="off" >
+         <input type="radio" class="btn-bronce" name="creatividad_perspectiva" id="bronce11" autocomplete="off" >
+         <input type="radio" class="btn-oro"    name="creatividad_perspectiva" id="oro11" autocomplete="off" >
+       </fieldset>
+       
+     </div>
+ 
+     <div class="btn-cr12" role="group" aria-label="Basic radio toggle button group">
+       <fieldset class="crr-button">
+         <input type="radio" class="btn-plata-r" name="btnradio" id="plata12" autocomplete="off" >
+         <input type="radio" class="btn-bronce-r" name="btnradio" id="bronce12" autocomplete="off" >
+         <input type="radio" class="btn-oro-r" name="btnradio" id="oro12" autocomplete="off" >
+       </fieldset>
+     </div>
+     
+ 
+     
   </main>
+
+  
+  <script src="script-docente.js"> </script>
 </body>
