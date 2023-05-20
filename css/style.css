@@ -163,10 +163,10 @@ color: #0086BD;
 position: absolute;
 background-color: transparent;
 border-color: transparent;
-width: 80px;
+width: 300px;
 height: 45px;
-left: 1240px;
-top: 52px;
+left: 1100px;
+top: 82px;
 font-weight: 900;
 font-size: 27px;
 line-height: 33px;
@@ -307,7 +307,7 @@ h5{
   width: 299px;
   height: 52px;
   left: 673px;
-  top: 50px;
+  top: 25px;
   font-weight: 900;
   font-size: 32px;
   line-height: 39px;
@@ -344,7 +344,7 @@ color: #000000;
   width: 438px;
   height: 47px;
   left: 921px;
-  top: 176px;
+  top: 192px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1209,3 +1209,56 @@ letter-spacing: 27px;
   display: inline-block;
   visibility: visible; 
 }
+
+#carga-video{
+position: absolute;
+width: 429px;
+height: 270px;
+left: 950px;
+top: 321px;
+border-radius: 47px;
+}
+#resultado{
+position: absolute;
+width: 489px;
+height: 50px;
+left: 895px;
+top: 661px;
+font-weight: 700;
+font-size: 27px;
+line-height: 33px;
+text-align: center;
+color: #56BC8B;
+}
+#tarjetas{
+position: absolute;
+width: 345px;
+height: 37px;
+left: 980px;
+top: 724px;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: #0085BD;
+}
+.tar-plata{
+position: absolute;
+width: 92px;
+height: 135px;
+left: 990px;
+top: 800px;
+}
+.tar-bronce{
+position: absolute;
+width: 92px;
+height: 135px;
+left: 1100px;
+top: 800px;
+}
+.tar-oro{
+  position: absolute;
+  width: 92px;
+  height: 135px;
+  left: 1210px;
+  top: 800px;
+  }
