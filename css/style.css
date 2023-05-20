@@ -1223,7 +1223,7 @@ position: absolute;
 width: 489px;
 height: 50px;
 left: 895px;
-top: 661px;
+top: 610px;
 font-weight: 700;
 font-size: 27px;
 line-height: 33px;
@@ -1235,7 +1235,7 @@ position: absolute;
 width: 345px;
 height: 37px;
 left: 980px;
-top: 724px;
+top: 670px;
 font-weight: 600;
 font-size: 20px;
 line-height: 24px;
@@ -1246,19 +1246,69 @@ position: absolute;
 width: 92px;
 height: 135px;
 left: 990px;
-top: 800px;
+top: 730px;
 }
 .tar-bronce{
 position: absolute;
 width: 92px;
 height: 135px;
 left: 1100px;
-top: 800px;
+top: 730px;
 }
 .tar-oro{
   position: absolute;
   width: 92px;
   height: 135px;
   left: 1210px;
-  top: 800px;
+  top: 730px;
   }
+#total-plata{
+position: absolute;
+width: 48px;
+height: 53px;
+left: 1030px;
+top: 890px;
+font-weight: 800;
+font-size: 23px;
+line-height: 28px;
+color: #56BC8B;
+}
+#total-bronce{
+position: absolute;
+width: 48px;
+height: 53px;
+left: 1135px;
+top: 890px;
+font-weight: 800;
+font-size: 23px;
+line-height: 28px;
+color: #56BC8B;
+}
+#total-oro{
+position: absolute;
+width: 48px;
+height: 53px;
+left: 1245px;
+top: 890px;
+font-weight: 800;
+font-size: 23px;
+line-height: 28px;
+color: #56BC8B;
+}
+#Save{
+position: absolute;
+background-color: transparent;
+border-color: transparent;
+width: 299px;
+height: 52px;
+left: 1265px;
+top: 890px;
+font-weight: 900;
+font-size: 32px;
+line-height: 39px;
+color: #0085BD;
+}
+#Save:hover {
+  background-color: transparent;
+  color: #57BA8B ;
+}
