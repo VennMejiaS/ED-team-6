@@ -143,7 +143,7 @@ body {
   line-height: 5px;
 }
 
-.button:hover[type="submit"] {
+#button:hover[type="submit"] {
   background-color: transparent;
   color: #57BA8B ;
 }
@@ -191,7 +191,7 @@ color: #0086BD;
   }
   #btn-save:hover {
     background-color: transparent;
-    color: #57BA8B ;
+    color: #57BA8B ;  
   }
 
 #student-name{
@@ -206,8 +206,8 @@ color: #0086BD;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 24px;  
     font-size: 27px;
-    padding-left: 200px;
-    color: #A9A5A5
+    color: #A9A5A5;
+    text-align: center;
   }
 #teacher-email{
 box-sizing: border-box;
@@ -221,8 +221,8 @@ border: 1px solid rgba(0, 0, 0, 0.2);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 24px;
 font-size: 27px;
-padding-left: 200px;
-color: #A9A5A5
+color: #A9A5A5;
+text-align: center;
 }
 
 #proyect-name{
@@ -237,8 +237,9 @@ color: #A9A5A5
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 24px;  
   font-size: 27px;
-  padding-left: 200px;
-  color: #A9A5A5
+  color: #A9A5A5;
+  text-align: center;
+  
 }
 #videoproyect{
   box-sizing: border-box;
@@ -251,9 +252,9 @@ color: #A9A5A5
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 24px;  
-  font-size: 27px;
-  padding-left: 200px;
-  color: #A9A5A5
+  font-size: 22px;
+  color: #A9A5A5;
+  text-align: center;
 }
 h3{
   position: absolute;
@@ -337,50 +338,62 @@ line-height: 37px;
 text-align: center;
 color: #000000;
 }
-/* Dropdown Button */
 .dropbtn {
-  box-sizing: border-box;
-  position: absolute;
-  width: 438px;
-  height: 47px;
-  left: 921px;
-  top: 192px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 24px;
-  font-size: 30px;
+box-sizing: border-box;
+position: absolute;
+width: 438px;
+height: 47px;
+left: 921px;
+top: 135px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 24px;
+cursor: pointer;
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 37px;
+text-align: center;
+color: #000000;
 }
-
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  width: 375px;
+  left: 936px;
+  top: 183px;
+  background-color: #f9f9f9;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 20px;
 }
-
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: lightgray;
+}
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+#video-container{
+position: absolute;
+border-radius: 50px;
+width: 429px;
+height: 270px;
+left: 950px;
+top: 280px;
+}
 
 #Pensamiento{
 box-sizing: border-box;
@@ -1312,3 +1325,36 @@ color: #0085BD;
   background-color: transparent;
   color: #57BA8B ;
 }
+#obtenidas-plata{
+position: absolute;
+width: 61px;
+height: 67px;
+left: 470px;
+top: 900px;
+font-weight: 800;
+font-size: 27px;
+line-height: 33px;
+color: #56BC8B;
+}
+#obtenidas-bronce{
+  position: absolute;
+  width: 61px;
+  height: 67px;
+  left: 690px;
+  top: 900px;
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 33px;
+  color: #56BC8B;
+  }
+#obtenidas-oro{
+  position: absolute;
+  width: 61px;
+  height: 67px;
+  left: 900px;
+  top: 900px;
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 33px;
+  color: #56BC8B;
+  }

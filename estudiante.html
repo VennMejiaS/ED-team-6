@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
     <title>Estudiante</title>
 </head>
 <body>
@@ -15,10 +16,10 @@
       <button id="btn-exit">Salir</button>
     </div> 
     <form> 
-      <input id="student-name" type="text" required minlength="1" maxlength="30" placeholder="Nombre del estudiante"> 
-      <input id="teacher-email" type="email" required minlength="1" maxlength="30" placeholder="Correo del docente"> 
-      <input id="proyect-name" type="text" required minlength="1" maxlength="30" placeholder="Nombre del proyecto">
-      <input type="url" id="videoproyect" name="video" value="Pegar link de Youtube">
+      <input id="student-name" type="text" required minlength="1" maxlength="50" placeholder="Nombre del estudiante"> 
+      <input id="teacher-email" type="email" required minlength="1" maxlength="50" placeholder="Correo del docente"> 
+      <input id="proyect-name" type="text" required minlength="1" maxlength="100" placeholder="Nombre del proyecto">
+      <input id="videoproyect" type="url" required minlength="1" maxlength="200" placeholder="Pegar link de You Tube">
     </form>
     <div>
       <h3>Resultado de la calificación</h3>
@@ -26,8 +27,12 @@
       <img class="plata" src="img/plata.png" alt="tarjeta-plata">
       <img class="bronce" src="img/bronce.png" alt="tarjeta-bronce">
       <img class="oro" src="img/oro.png" alt="tarjeta-oro">
+      <span id="obtenidas-plata">0</span>
+      <span id="obtenidas-bronce">0</span>
+      <span id="obtenidas-oro">0</span>
       <button id="btn-save">Guardar</button>
     </div>
-  </main>    
+  </main>  
+  <script src="js/script-botones.js"></script>
 </body>
 </html>

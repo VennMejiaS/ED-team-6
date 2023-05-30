@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
     <title>Docente</title>
     
 </head>
@@ -16,18 +17,19 @@
       <h5>Evaluación</h5>
       <button id="btn-exit">Cerrar sesión</button>
       <h6>Criterios de evaluación</h6>
-      <label class="proyect">Nombre del proyecto</label>
+      <span id="proyect">
+       <!-- Aquí va el nombre del proyecto -->   
     </div>
-  
-    </div>
-
-    <div>
-        <button onclick="myFunction()" class="dropbtn">Alumnos participantes</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">Hermione Granger</a>
-          <a href="#">Ron Weasley</a>
-          <a href="#">Draco Malfoy</a>
-        </div>
+    <div class="dropdown">
+      <button class="dropbtn">Alumnos Participantes</button>
+      <div class="dropdown-content">
+        <a href="#" onclick="cargarVideo('tgbNymZ7vqY')">Hermione Granger</a>
+        <a href="#" onclick="cargarVideo('VnT7pT6zCcA')">Ron Weasley</a>
+        <a href="#" onclick="cargarVideo('zCRUPWDIgYM')">Draco Malfoy</a>
+      </div>
+      <div id="video-container">
+        <!-- Aquí se cargará el video de YouTube --> 
+      </div>
     </div>
     <div class="Pensamiento-critico">
      <p id="Pensamiento"> Pensamiento Crítico</p> 
@@ -172,21 +174,21 @@
          <input type="radio" class="btn-oro-r" name="btnradio" id="oro12" autocomplete="off" >
        </fieldset>
      </div>
-     <iframe id="carga-video" width="673" height="411" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
-     </iframe>
      <div>
       <p id="resultado">Resultado de la calificación</p>
       <p id="tarjetas">Tarjetas coleccionadas</p>
       <img class="tar-plata" src="img/plata.png" alt="tarjeta-plata">
       <img class="tar-bronce" src="img/bronce.png" alt="tarjeta-bronce">
       <img class="tar-oro" src="img/oro.png" alt="tarjeta-oro">
-      <span id="total-plata">0</span>
-      <span id="total-bronce">0</span>
-      <span id="total-oro">0</span>
+      <div id="tct">
+        <span id="total-plata">0</span>
+        <span id="total-bronce">0</span>
+        <span id="total-oro">0</span>
+      </div>
     </div>
     <button type="submit" id="Save">Guardar</button>
   </main>
 
-  <script src="js/script-pc.js"> </script>
+  <script src="js/script.js"> </script>
   <script src="js/script-botones.js"></script>  
 </body>
